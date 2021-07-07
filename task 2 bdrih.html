@@ -47,5 +47,18 @@ justify-content: center;
 <center><div><input type="submit" value="backward"></div></center>
 
 </form>
+  <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "138234e7-e6f2-4566-9e88-b44d05f3a595", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "51496a29-5f62-44f1-b489-260e59489f71", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 </body>
 </html>
